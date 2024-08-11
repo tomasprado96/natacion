@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <nav id="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="uno.html">Registro de Competidores</a></li>
+            <li><a href="dos.html">Registro de Resultados</a></li>
+            <li><a href="tres.html">Resultados y Consultas</a></li>
+        </nav>
+        </div>
+
+    <div id="uno">
+        <div>
+        <h2>Registro de Competidor</h2>
+        
+        
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="estilo">Estilo:</label>
+            <select id="estilo">
+                <option value="Pecho">Pecho</option>
+                <option value="Crol">Crol</option>
+                <option value="Espalda">Espalda</option>
+                <option value="Mariposa">Mariposa</option>
+            </select>
+            
+            <label for="distancia">Distancia:</label>
+            <select id="distancia">
+                <option value="25">25 metros</option>
+                <option value="50">50 metros</option>
+                <option value="100">100 metros</option>
+            </select>
+            <div>
+            <button type="button" onclick="registrarCompetidor()">Registrar</button>
+        </form>
+    
+    
+        <div>
+        <h2>Asignación de Carriles</h2>
+        <button onclick="asignarCarriles(5)">Asignar Carriles</button>
+    </div>
+
+
+    <h2>Mostrar Todo</h2>
+    <button onclick="mostrarTodo()">Mostrar Competidores, Carriles y Resultados</button>
+
+    <div id="competidores" class="section">
+        <div class="section-title">Competidores</div>
+        <!-- Los competidores se mostrarán aquí -->
+    </div>
+
+    <div id="carriles" class="section">
+        <div class="section-title">Carriles Asignados</div>
+        <!-- Los carriles se mostrarán aquí -->
+    </div>
+
+    <div id="resultados" class="section">
+        <div class="section-title">Resultados</div>
+        <!-- Los resultados se mostrarán aquí -->
+    </div>
+</div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
